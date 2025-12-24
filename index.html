@@ -2,163 +2,217 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Khushboo Abdullah · Portfolio</title>
-    <meta name="description" content="Portfolio of Khushboo Abdullah – MERN stack and Java developer." />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Website</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+    <!--Header-Section-->
     <header>
-        <div class="container nav">
-            <div class="brand">
-                <div class="logo"></div> <span>Khushboo Abdullah</span>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="image.jpg" width="100" height="120" style="border-radius: 20px;" />
+                <h3 style="color: black;">Khushboo Abdullah</h3>
             </div>
-            <nav class="menu" aria-label="Primary">
-                <a href="#about" class="active">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <button class="hamburger" aria-label="Open Menu" onclick="toggleMenu()">☰</button>
-        </div>
-        <div class="container mobile" id="mobileMenu">
-            <a href="#about" onclick="toggleMenu()">About</a>
-            <a href="#skills" onclick="toggleMenu()">Skills</a>
-            <a href="#projects" onclick="toggleMenu()">Projects</a>
-            <a href="#contact" onclick="toggleMenu()">Contact</a>
-        </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#grid">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="hamburger">
+                ☰
+            </div>
+        </nav>
     </header>
 
-    <main class="container">
-        <!-- HERO -->
-        <section class="hero">
-            <div>
-                <span class="badge">Open to SDE Intern / Fresher Roles</span>
-                <h1>Java & MERN Stack Developer</h1>
-                <p class="lead">I build clean, responsive web apps with React, Node.js, Express and MongoDB. Strong in
-                    Java and problem solving. Based in India.</p>
-                <div class="cta">
-                    <a class="btn" href="#projects">View Projects</a>
-                    <a class="btn secondary" href="mailto:khushbooabdullah86@gmail.com">Contact Me</a>
-                    <a class="btn secondary" href="YOUR_RESUME_LINK.pdf" target="_blank" rel="noopener">Download
-                        Resume</a>
-                </div>
-                <p class="tiny">Email: <a href="mailto:khushbooabdullah86@gmail.com">khushbooabdullah86@gmail.com</a> ·
-                    GitHub: <a href="https://github.com/Khushboo30628" target="_blank" rel="noopener">@Khushboo30628</a>
+    <!--Main-Section -->
+    <main>
+        <div id="home">
+            <div class="ist">
+                <button style="background-color: black; color: white;">Open to SDE Intern / Fresher Roles</button>
+                <br /> <br />
+                <h1>MERN Stack Developer</h1>
+                <p>Motivated and detail‑oriented developer with a strong foundation in Java and
+                    the MERN stack.<br /> I
+                    enjoy
+                    converting ideas into working products and writing clean, readable code.I build clean, responsive
+                    web apps with React, Node.js, Express and MongoDB. Strong in Java and problem solving. Based in
+                    India.
                 </p>
+                <br />
+                <button class="btn" style="background-color: navy;"><a href="#grid"">View Projects</a></button>
+                <button class=" btn"><a href="#contact">Contact Me</a></button>
+                <button class="btn"><a href="">Download Resume</a></button>
             </div>
-            <div class="card">
-                <h2 style="margin:0 0 8px">Quick Facts</h2>
-                <ul style="margin:0;padding-left:18px;color:var(--muted)">
+            <div class="second" style="margin-top: 50px;">
+                <h3 style="margin-left: 30px; margin-top: 20px;">Quick Facts</h3>
+                <ul style="margin-left: 30px; margin-top: 10px;">
                     <li>BCA graduate (CGPA 7.84)</li>
                     <li>Tech: Java, React, Node.js, Express, MongoDB</li>
                     <li>Tools: Git, GitHub</li>
                 </ul>
             </div>
-        </section>
+        </div>
 
-        <!-- ABOUT -->
-        <section id="about">
-            <h2 class="sec-title">About</h2>
-            <div class="card">
-                <p class="lead" style="margin:0">Motivated and detail‑oriented developer with a strong foundation in
-                    Java and the MERN stack. I enjoy converting ideas into working products and writing clean, readable
-                    code.</p>
+        <!--Skills-->
+        <div id="skills">
+            <h2>Skills</h2>
+            <div class="skillsbtn">
+                <button>JavaScript</button>
+                <button>HTML</button>
+                <button>CSS</button>
+                <button>React.js</button>
+                <button>Node.js</button>
+                <button>Express.js</button>
+                <button>MongoDB</button>
+                <button>MongoDB</button>
+                <button>Git & GitHub</button>
             </div>
-        </section>
 
-        <!-- SKILLS -->
-        <section id="skills">
-            <h2 class="sec-title">Skills</h2>
-            <div class="card">
-                <div class="stack">
-                    <span class="pill">Java</span>
-                    <span class="pill">JavaScript</span>
-                    <span class="pill">HTML</span>
-                    <span class="pill">CSS</span>
-                    <span class="pill">React.js</span>
-                    <span class="pill">Node.js</span>
-                    <span class="pill">Express.js</span>
-                    <span class="pill">MongoDB</span>
-                    <span class="pill">Git & GitHub</span>
-                </div>
-            </div>
-        </section>
+        </div>
 
-        <!-- PROJECTS -->
-        <section id="projects">
-            <h2 class="sec-title">Projects</h2>
-            <div class="grid cols-2">
-                <article class="project">
-                    <h3>WanderLust – Travel Booking Platform</h3>
-                    <p>Full‑stack MERN application with authentication, property listings, search filters, and booking
-                        management. Responsive UI across devices.</p>
-                    <div class="stack">
-                        <span class="pill">React</span><span class="pill">Node</span><span
-                            class="pill">Express</span><span class="pill">MongoDB</span>
-                    </div>
-                    <div class="proj-links">
-                        <a class="btn secondary" href="https://github.com/Khushboo30628/WanderLust" target="_blank"
-                            rel="noopener">GitHub Repo</a>
-                        <a class="btn secondary" href="#" target="_blank" rel="noopener">Live Demo</a>
-                    </div>
-                </article>
-                <article class="project">
-                    <h3>Personal Portfolio Website</h3>
+        <!--Projects-->
+        <div id="grid">
+            <h2>Projects</h2>
+            <div class="gridcard">
+
+                <div>
+                    <h2>Personal Portfolio Website</h2>
                     <p>Responsive single‑page site (this one) built with semantic HTML, modern CSS and a sprinkle of JS.
                         Clean design and fast loading.</p>
-                    <div class="stack">
-                        <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span>
-                    </div>
-                    <div class="proj-links">
-                        <a class="btn secondary" href="https://github.com/Khushboo30628" target="_blank"
-                            rel="noopener">Source</a>
-                        <a class="btn secondary" href="#"
-                            onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to Top</a>
-                    </div>
-                </article>
-            </div>
-        </section>
+                    <button>HTML</button>
+                    <button>CSS</button>
+                    <button>JavaScript</button>
 
-        <!-- CERTIFICATIONS -->
-        <section id="certs">
-            <h2 class="sec-title">Certifications</h2>
-            <div class="card">
-                <ul style="margin:0;padding-left:18px">
+                    <br />
+
+                    <button style="border-radius: 10px;"><a href="https://github.com/Khushboo30628/PORTFOLIO.git"
+                            style="color: black; text-decoration: none;">GitHub
+                            Repo</a></button>
+                </div>
+
+                <div>
+                    <h2>Recipe-Search-App</h2>
+                    <p>Developed a responsive web application that allows users to search recipes by name or keyword
+                        using a third-party API.
+                    </p>
+                    <button>HTML</button>
+                    <button>CSS</button>
+                    <button>JS</button>
+
+                    <br />
+                    <button style="border-radius: 10px;"><a
+                            href="https://github.com/Khushboo30628/RECIPE-SEARCH-APP.git"
+                            style="color: black; text-decoration: none;">GitHub
+                            Repo</a></button>
+
+                </div>
+
+                <div>
+                    <h2>Spotify - Clone</h2>
+                    <p>A Spotify clone built using pure HTML and CSS, focused on recreating the core UI and layout of
+                        the original platform.</p>
+                    <button>HTML</button>
+                    <button>CSS</button>
+                    <br />
+                    <button style="border-radius: 10px;"><a href="https://github.com/Khushboo30628/SPOTIFY-CLONE.git"
+                            style="color: black; text-decoration: none;">GitHub
+                            Repo</a></button>
+
+                </div>
+
+                <div>
+                    <h2>WanderLust – Travel Booking Platform</h2>
+                    <p>Full‑stack MERN application with authentication, property listings, search filters, and booking
+                        management. Responsive UI across devices.</p>
+                    <button>React</button>
+                    <button>Node</button>
+                    <button>Express</button>
+                    <button>MongoDB</button>
+                    <br />
+
+                    <button style="border-radius: 10px;"><a href="https://github.com/Khushboo30628/WANDERLUST.git"
+                            style="color: black; text-decoration: none;">GitHub
+                            Repo</a></button>
+                </div>
+
+                <div>
+                    <h2>Zerodha Clone – Full Stack Web Application</h2>
+                    <p>Developed a stock trading platform clone using the MERN stack.</p>
+                    <button>React</button>
+                    <button>Node</button>
+                    <button>Express</button>
+                    <button>MongoDB</button>
+                    <br />
+
+                    <button style="border-radius: 10px;"><a href="https://github.com/Khushboo30628/ZERODHA-CLONE.git"
+                            style="color: black; text-decoration: none;">GitHub
+                            Repo</a></button>
+                </div>
+
+                <div>
+                    <h2>Apna Video Call – Full Stack MERN Project</h2>
+                    <p>Built a real-time video conferencing platform using the MERN stack </p>
+                    <button>React</button>
+                    <button>Node</button>
+                    <button>Express</button>
+                    <button>MongoDB</button>
+
+                    <br />
+
+                    <button style="border-radius: 10px;"><a href="https://github.com/Khushboo30628/Apna-Video-Call.git"
+                            style="color: black; text-decoration: none;">GitHub
+                            Repo</a></button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Certificates-->
+        <div id="certificates">
+            <h2>Certificates</h2>
+            <div class="certificatesul">
+                <ul>
                     <li>DSA in Java – Apna College, 2025 · <a
-                            href="https://github.com/Khushboo30628/DEVELOPMENT-FOLDER/raw/main/NOTES/CERTIFICATE-1.pdf"
-                            target="_blank" rel="noopener">View Certificate</a></li>
-                    <li>MERN Stack – Apna College, 2025 · <a href="#" target="_blank" rel="noopener">View
+                            href="https://github.com/Khushboo30628/DEVELOPMENT-FOLDER/blob/main/FOUR-THEORY-SUBJECT-NOTES/CERTIFICATE-1.pdf">View
+                            Certificate</a></li>
+                    <li>MERN Stack – Apna College, 2025 · <a
+                            href="https://github.com/Khushboo30628/DEVELOPMENT-FOLDER/blob/main/FOUR-THEORY-SUBJECT-NOTES/CERTIFICATE-2.pdf">View
                             Certificate</a></li>
                 </ul>
             </div>
-        </section>
 
-        <!-- CONTACT -->
-        <section id="contact">
-            <h2 class="sec-title">Contact</h2>
-            <div class="card">
-                <p class="lead" style="margin:0 0 12px">Have an opportunity or feedback? I'd love to hear from you.</p>
-                <div class="cta">
-                    <a class="btn" href="mailto:khushbooabdullah86@gmail.com">Email Me</a>
-                    <a class="btn secondary" href="https://github.com/Khushboo30628" target="_blank"
-                        rel="noopener">GitHub Profile</a>
-                    <a class="btn secondary" href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener">LinkedIn</a>
-                </div>
+        </div>
+
+        <!--Contact-->
+        <div id="contact">
+            <h2>Contact</h2>
+            <div class="contactbtn">
+                <p>Have an opportunity or feedback? I'd love to hear from you.</p>
+                <button style="background-color: blue; border: 1px solid white;"><a
+                        href="mailto:khushbooabdullah86@gmail.com" style="color: white;">Email-Me</a></button>
+                <button><a href="https://github.com/Khushboo30628">Github</a></button>
+                <button><a href="https://www.linkedin.com/in/khushboo-abdullah">LinkedIn</a></button>
             </div>
-        </section>
+
+        </div>
+
     </main>
 
+    <!--Footer-->
     <footer>
-        <div class="container">© <span id="year"></span> Khushboo Abdullah · Built with HTML, CSS & JS</div>
+        <div class="foot">
+            <p>© 2025 Khushboo Abdullah · Built with HTML, CSS & JS</p>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
